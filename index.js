@@ -1,33 +1,17 @@
-var makel = document.getElementById("makel");
-var mecha = document.getElementById("mecha");
-var isg = document.getElementById("isg");
-var fluid = document.getElementById("fluid");
-var heat = document.getElementById("heat");
-var ref = document.getElementById("ref");
-var manuf = document.getElementById("manuf");
+var signal = document.getElementById("signal");
+var ecd = document.getElementById("ecd");
 
 
-var makel_time = new Date("November 23 2020 13:15");
-var mecha_time = new Date("November 24 2020 15:15");
-var isg_time = new Date("November 25 2020 10:15");
-var fluid_time = new Date("November 25 2020 17:15");
-var heat_time = new Date("November 26 2020 10:15");
-var ref_time = new Date("November 26 2020 13:15");
-var manuf_time = new Date("November 28 2020 13:15");
+var signal_time = new Date("December 29 2020 08:30");
+var ecd_time = new Date("January 06 2021 12:30");
 
 var current = new Date();
 
 
 var timer = setInterval( () => {
     current = new Date();
-    makel.innerHTML = "Machine Elements: " + msToTime(makel_time - current);
-    mecha.innerHTML = "Mechatronics: " + msToTime(mecha_time - current);
-    isg.innerHTML = "İs saglıgı: " + msToTime(isg_time - current);
-    fluid.innerHTML = "Fluid Mechanics: " + msToTime(fluid_time - current);
-    heat.innerHTML = "Heat Transfer: " + msToTime(heat_time - current);
-    ref.innerHTML = "Refrigiration: " + msToTime(ref_time - current);
-    manuf.innerHTML = "MELİH BAYRAMOĞLU: " + msToTime(manuf_time - current);
-
+    signal.innerHTML = "Signal: " + msToTime(signal_time - current);
+    ecd.innerHTML = "ECD: " + msToTime(ecd_time - current);
 }, 1000)
 
 
